@@ -1,15 +1,18 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import  Nav  from "../components/Nav"
+import {AnimatePresence} from "framer-motion"
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
 
   
   return (
    
-    <div>
+    <div className='py-24 px-12 lg:px-48'>
      <Nav />
-     <Component {...pageProps} />
+     <AnimatePresence>
+      <Component key={router.pathname} {...pageProps} />
+     </AnimatePresence>
     </div>
   
   )

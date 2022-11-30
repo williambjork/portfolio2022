@@ -5,13 +5,24 @@ import { motion as m } from "framer-motion"
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <m.div 
+    className='text-gray-900 absolute left-0 w-full h-full bg-orange-100 top-0 px-16 lg:px-48'
+    initial={{
+      y: "100%"
+    }}
+    animate={{
+      y: "0%"
+    }}
+    transition={{
+      duration: 0.75, ease: "easeOut"
+    }}
+    exit={{opacity: 1}}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
+      <main>
         <div className='my-96 p-1'>
           <h1 className='text-6xl text-center lg:text-right lg:text-9xl'>
             William Björk
@@ -33,7 +44,7 @@ const Home: NextPage = () => {
       </main>
 
       
-    </div>
+    </m.div>
   )
 }
 
