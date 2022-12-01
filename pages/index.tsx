@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
       <main>
         <div className='my-96 p-1'>
-          <h1 className='text-6xl text-center lg:text-right lg:text-9xl'>
+          <h1 className='font-bungee-shade text-6xl text-center lg:text-right '>
             William Björk
           </h1>
         </div>

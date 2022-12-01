@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "BungeeShade";
+    src: url("../public/fonts/bungeeShade-Regular.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("../public/fonts/DMSans-Bold.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+} 
