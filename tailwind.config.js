@@ -9,7 +9,9 @@ module.exports = {
       fontFamily: {
         
         "bungee-shade": ["BungeeShade"],
-        "dmsans": ["DMSans"]
+        "dmsans": ["DMSans"],
+        "sansita": ["Sansita"],
+        "gravitas-one": ["GravitasOne"]
        
 
       },

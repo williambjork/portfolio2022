@@ -2,7 +2,7 @@ import { motion as m } from "framer-motion"
 
 function Work() {
   return (
-    <m.main className="text-ray-900 absolute top-0 left-0 w-full h-full bg-blue-400 px-16 lg:px-48"
+    <m.main className="text-ray-900 absolute top-0 left-0 w-full h-full bg-sky-400 px-16 lg:px-48"
     initial={{
       x: "100%"
     }}
