@@ -9,7 +9,8 @@
     "framer-motion": "^7.6.1",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tsparticles-engine": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

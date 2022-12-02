@@ -22,7 +22,7 @@ function contact() {
                 <h3>Find me:</h3>
             </div>
 
-            <div className="lg:text-6xl text-2xl underline">
+            <div className="text-xl ">
               <ul>
                 <li className="pb-2">Twitter</li>
                 <li className="pb-2">Instagram</li>
