@@ -7,6 +7,7 @@ const particlesConfig = {
     "detectRetina": false,
     "fpsLimit": 120,
     "interactivity": {
+        "detect_on": "window",
         "events": {
             "onClick": {
                 "enable": false,
@@ -14,7 +15,7 @@ const particlesConfig = {
             },
             "onDiv": {
                 "elementId": "repulse-div",
-                "enable": false,
+                "enable": true,
                 "mode": "repulse"
             },
             "onHover": {
@@ -68,7 +69,7 @@ const particlesConfig = {
     },
     "particles": {
         "color": {
-            "value": "#ffffff"
+            "value": "#f5d271"
         },
         "lineLinked": {
             "blink": false,
