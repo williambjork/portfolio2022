@@ -43,22 +43,16 @@ const particlesLoaded = useCallback(async container => {
                   quantity: 4,
               },
               repulse: {
-                  distance: 200,
-                  duration: 0.4,
+                  distance: 100,
+                  duration: 0.3,
               },
           },
       },
       particles: {
           color: {
-              value: "#ffffff",
+              value: "#f5d271",
           },
-          links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-          },
+          
           collisions: {
               enable: true,
           },
@@ -69,7 +63,7 @@ const particlesLoaded = useCallback(async container => {
                   default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 0.3,
               straight: false,
           },
           number: {
@@ -81,6 +75,12 @@ const particlesLoaded = useCallback(async container => {
           },
           opacity: {
               value: 0.5,
+              "anim": {
+                "enable": true,
+                "speed": 0.2,
+                "opacity_min": 0,
+                "sync": false
+              }
           },
           shape: {
               type: "circle",
