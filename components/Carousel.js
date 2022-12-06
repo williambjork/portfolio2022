@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 function Carousel({items}) {
     const [currentItem, setCurrentItem] = React.useState(0);
 
+    
+
   // Event handler for clicking the "next" button
   const handleNextClick = () => {
-    setCurrentItem(currentItem + 1);
+    setCurrentItem((currentItem + 1) % items.length);
   };
 
   // Event handler for clicking the "previous" button
