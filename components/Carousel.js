@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 
 
 function Carousel({items}) {
-    const [currentItem, setCurrentItem] = React.useState(0);
+    const [currentItem, setCurrentItem] = useState(0);
 
-    
 
   // Event handler for clicking the "next" button
   const handleNextClick = () => {
@@ -13,8 +12,10 @@ function Carousel({items}) {
 
   // Event handler for clicking the "previous" button
   const handlePrevClick = () => {
-    setCurrentItem(currentItem - 1);
+    setCurrentItem((currentItem + 1) % items.length);
   };
+
+ 
 
   return (
     <div className="carousel-container">
@@ -37,6 +38,7 @@ function Carousel({items}) {
 
       <button onClick={handlePrevClick}>Previous</button>
       <button onClick={handleNextClick}>Next</button>
+      
     </div>
   );
 }

@@ -4,11 +4,33 @@ import Image from 'next/image'
 import { motion as m } from "framer-motion"
 import ParticlesBackground from "../components/ParticlesBackground"
 import particlesConfig from "../components/config/indexParticles.config.js"
+import { useEffect, useState } from 'react'
 
 
 const Home: NextPage = () => {
+
+  const [mouseX, setMouseX] = useState(0);
+  const [mouseY, setMouseY] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  function handleMouseMove(event) {
+    setMouseX(event.clientX);
+    setMouseY(event.clientY);
+  }
+
+  const styles = {
+    background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, #fff7ed, 
+      #ffedd5)`,
+    backgroundSize: '10px',
+  }
+
   return (
-    <m.div 
+    <m.div
+    style={styles} 
     className='text-gray-900 absolute left-0 w-full h-full bg-orange-100 top-0 px-16 lg:px-48'
     initial={{
       y: "100%"
@@ -33,11 +55,7 @@ const Home: NextPage = () => {
             William Björk
           </h1>
           <h3 className='pl-2 font-sansita pt-3 text-2xl'>React & NextJS Developer</h3>
-          <div>
-              <h2>Front</h2>
-              <h2>End</h2>
-              <h2>Dev</h2>
-            </div>
+         
         </div>
         
           
