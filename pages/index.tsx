@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { motion as m } from "framer-motion"
 import ParticlesBackground from "../components/ParticlesBackground"
+import particlesConfig from "../components/config/indexParticles.config.js"
+
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +25,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ParticlesBackground />
+      
 
       <main>
         <div className='my-96 p-1'>
@@ -31,6 +33,7 @@ const Home: NextPage = () => {
             William Björk
           </h1>
           <h3 className='pl-2 font-sansita pt-3 text-2xl'>React & NextJS Developer</h3>
+          
         </div>
         
           <div className='flex justify-between'>
@@ -47,7 +50,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      
+      <ParticlesBackground />
     </m.div>
   )
 }

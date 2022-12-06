@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion"
+import Project from "../components/Project"
 
 function Work() {
   return (
@@ -13,10 +14,12 @@ function Work() {
       duration: 0.75, ease: "easeOut"
     }}
     exit={{opacity: 1}}>
-        <div className="my-96 p-1">
+        <div className="my-96 p-1 font-dmsans">
             <h1>Projects</h1>
         </div>
 
+    <Project />
+        
         
     </m.main>
   )
