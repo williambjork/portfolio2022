@@ -23,8 +23,8 @@ const Home: NextPage = () => {
   }
 
   const styles = {
-    background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, #fff7ed, 
-      #ffedd5)`,
+    background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, #ffedd5, #fed7aa 
+      )`,
     backgroundSize: '10px',
   }
 
