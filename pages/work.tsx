@@ -1,7 +1,25 @@
 import { motion as m } from "framer-motion"
-import Project from "../components/Project"
+import Carousel from "../components/Carousel"
+import Project from "../Components/Project" 
 
 function Work() {
+
+  const items = [
+    
+    {
+      title: 'Gobil',
+      description: 'Auction website'
+    },
+    {
+      title: 'ibtc',
+      description: 'Crypto site'
+    },
+    {
+      title: 'World Ranker',
+      description: 'API implementation'
+    }
+  ];
+
   return (
     <m.main className="text-ray-900 absolute top-0 left-0 w-full h-full bg-sky-400 px-16 lg:px-48"
     initial={{
@@ -16,9 +34,12 @@ function Work() {
     exit={{opacity: 1}}>
         <div className="my-96 p-1 font-dmsans">
             <h1>Projects</h1>
+
+        <Carousel items={items}/>
+           
         </div>
 
-    <Project />
+    
         
         
     </m.main>

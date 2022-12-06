@@ -28,26 +28,19 @@ const Home: NextPage = () => {
       
 
       <main>
-        <div className='my-96 p-1'>
+        <div className='mt-72 p-1'>
           <h1 className='font-bungee-shade flex text-6xl text-center lg:text-right '>
             William Björk
           </h1>
           <h3 className='pl-2 font-sansita pt-3 text-2xl'>React & NextJS Developer</h3>
-          
-        </div>
-        
-          <div className='flex justify-between'>
-            <div>
+          <div>
               <h2>Front</h2>
               <h2>End</h2>
               <h2>Dev</h2>
             </div>
-            <div>
-              <h2>Stuff</h2>
-              <h2>goes</h2>
-              <h2>here</h2>
-            </div>
         </div>
+        
+          
       </main>
 
       <ParticlesBackground />

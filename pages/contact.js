@@ -15,9 +15,10 @@ function contact() {
     exit={{opacity: 1}}>
         <div className="font-dmsans text-xl my-96 p-1">
             <h1>let's talk</h1>
-        </div>
 
-        <div className="flex gap-40">
+            <div className="flex gap-40">
+            
+            
             <div className="lg:text-2xl">
                 <h3>Find me:</h3>
             </div>
@@ -32,6 +33,9 @@ function contact() {
               </ul>
             </div>
         </div>
+        </div>
+
+        
     </m.main>
   )
 }
