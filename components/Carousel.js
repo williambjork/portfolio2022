@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 
@@ -32,7 +33,7 @@ function Carousel({items}) {
         return (
             <div className="carousel-item" style={style}>
             <h3 className='text-xl'>{item.title}</h3>
-            <Image src={item.image} width={300}/>
+            <Image src={item.image} width={300} height={300}/>
             <Link href={item.url}>{item.url}</Link>
             <p className='text-sm text-gray-800 mt-3'>{item.description}</p>
           </div>
