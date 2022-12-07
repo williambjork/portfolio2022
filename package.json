@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "emailjs": "^4.0.1",
     "framer-motion": "^7.6.1",
     "next": "latest",
     "react": "18.2.0",

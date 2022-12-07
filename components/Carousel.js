@@ -18,7 +18,7 @@ function Carousel({items}) {
  
 
   return (
-    <div className="carousel-container">
+    <div className="mt-6">
       {/* Use the map() method to loop through the items */}
       {items.map((item, index) => {
 
@@ -30,15 +30,17 @@ function Carousel({items}) {
 
         return (
             <div className="carousel-item" style={style}>
-            <h3>{item.title}</h3>
+            <h3 className='text-xl'>{item.title}</h3>
             <p>{item.description}</p>
           </div>
         );
       })}
 
-      <button onClick={handlePrevClick}>Previous</button>
-      <button onClick={handleNextClick}>Next</button>
-      
+      <div className='mt-3 text-sm gap-3'>
+        <button onClick={handlePrevClick}>Previous</button>
+        <button onClick={handleNextClick}>Next</button>
+      </div>
+
     </div>
   );
 }
