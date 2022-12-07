@@ -45,9 +45,7 @@ function Work() {
     }}
     exit={{opacity: 1}}>
         <div className="my-52 p-1 font-dmsans">
-           <div className="text-2xl">
-             <h1>Projects</h1>
-           </div>
+           
 
         <Carousel items={items}/>
            
