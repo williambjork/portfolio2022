@@ -10,21 +10,25 @@ function Work() {
       title: 'Refined Motorsport',
       description: 'A website fully designed and coded by me from the ground upI built this website from scratch using React, NextJS and Tailwind CSS. I focused on keeping the components small and manageable and spen a lot of time on the look and design. This project really solidified my understanding of both',
       url: 'https://lcemotors.vercel.app/',
+      image: '../public/src/images/refined.PNG'
     },
     {
       title: 'ibtc',
       description: 'Crypto site',
-      url: 'https://ibtc.se/'
+      url: 'https://ibtc.se/',
+      image: '../public/src/images/refined.PNG'
     },
     {
       title: 'Gobil',
       description: 'Web Design & System Development',
-      url: 'https://gobil.se/'
+      url: 'https://gobil.se/',
+      image: '../public/src/images/gobil.PNG'
     },
     {
-      title: 'Gobil',
-      description: 'Web Design & System Development',
-      url: 'https://gobil.se/'
+      title: 'PharmaUse',
+      description: 'Web Design & Project Management',
+      url: 'https://testcenter.se/',
+      image: '../public/src/images/PUScreen.PNG'
     }
   ];
 

@@ -32,8 +32,9 @@ function Carousel({items}) {
         return (
             <div className="carousel-item" style={style}>
             <h3 className='text-xl'>{item.title}</h3>
+            <Image src={item.image} width={300}/>
             <Link href={item.url}>{item.url}</Link>
-            <p>{item.description}</p>
+            <p className='text-sm text-gray-800 mt-3'>{item.description}</p>
           </div>
         );
       })}
