@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 
@@ -31,14 +32,15 @@ function Carousel({items}) {
         return (
             <div className="carousel-item" style={style}>
             <h3 className='text-xl'>{item.title}</h3>
+            <Link href={item.url}>{item.url}</Link>
             <p>{item.description}</p>
           </div>
         );
       })}
 
-      <div className='mt-3 text-sm gap-3'>
-        <button onClick={handlePrevClick}>Previous</button>
-        <button onClick={handleNextClick}>Next</button>
+      <div className='mt-3 text-sm gap-3 '>
+        <button className='mr-3 underline-offset-2 hover:decoration-dashed hover:underline' onClick={handlePrevClick}>Previous</button>
+        <button className='underline-offset-2 hover:decoration-dashed hover:underline' onClick={handleNextClick}>Next</button>
       </div>
 
     </div>

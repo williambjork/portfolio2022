@@ -7,16 +7,24 @@ function Work() {
   const items = [
     
     {
-      title: 'Gobil',
-      description: 'Auction website'
+      title: 'Refined Motorsport',
+      description: 'A website fully designed and coded by me from the ground upI built this website from scratch using React, NextJS and Tailwind CSS. I focused on keeping the components small and manageable and spen a lot of time on the look and design. This project really solidified my understanding of both',
+      url: 'https://lcemotors.vercel.app/',
     },
     {
       title: 'ibtc',
-      description: 'Crypto site'
+      description: 'Crypto site',
+      url: 'https://ibtc.se/'
     },
     {
-      title: 'World Ranker',
-      description: 'API implementation'
+      title: 'Gobil',
+      description: 'Web Design & System Development',
+      url: 'https://gobil.se/'
+    },
+    {
+      title: 'Gobil',
+      description: 'Web Design & System Development',
+      url: 'https://gobil.se/'
     }
   ];
 
