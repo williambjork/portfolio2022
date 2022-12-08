@@ -1,12 +1,23 @@
 import { motion as m } from "framer-motion"
 import { useEffect, useState } from "react";
+import Form from "../components/Form";
 
 function contact() {
 
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
+  const [bgColor, setBgColor] = useState('#ffffff');
 
-  useEffect(() => {
+  const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+ /*  useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
@@ -20,10 +31,11 @@ function contact() {
     background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, #ecfccb, #d9f99d)`,
     backgroundSize: '10px',
   }
+ */
 
   return (
     
-      <m.main style={styles} className="text-ray-900 absolute top-0 left-0 w-full  h-full px-16 lg:px-48"
+      <m.main style={{ backgroundColor: bgColor }} className="text-ray-900 absolute top-0 left-0 w-full  h-full px-16 lg:px-48"
       initial={{
         y: "-100%"
       }}
@@ -37,7 +49,8 @@ function contact() {
           <div className="font-dmsans text-xl my-96 p-1">
               <h1>let's talk</h1>
 
-              
+              <Form getRandomColor={getRandomColor} setBgColor={setBgColor} />
+
           </div>
           
 
