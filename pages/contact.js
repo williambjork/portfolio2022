@@ -6,13 +6,16 @@ function contact() {
 
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
-  const [bgColor, setBgColor] = useState('#ffffff');
+  const [bgColor, setBgColor] = useState('#d9f99d');
 
-  const getRandomColor = () => {
+  const getRandomColor = (currentColor) => {
     const letters = '0123456789ABCDEF';
-    let color = '#';
+    let color = currentColor;
     for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      const letterIndex = Math.floor(Math.random() * 16);
+      if (letterIndex !== color[i]) {
+        color = color.substring(0, i) + letters[letterIndex] + color.substring(i + 1);
+      }
     }
     return color;
   }
@@ -46,12 +49,14 @@ function contact() {
         duration: 0.75, ease: "easeOut"
       }}
       exit={{opacity: 1}}>
-          <div className="font-dmsans text-xl my-96 p-1">
+        
+          <div className="font-dmsans text-xl my-36 p-1">
               <h1>let's talk</h1>
 
               <Form getRandomColor={getRandomColor} setBgColor={setBgColor} />
 
           </div>
+        
           
 
           

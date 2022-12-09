@@ -1,34 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Form({ getRandomColor, setBgColor, bgColor }) {
-    const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setBgColor(getRandomColor());
+    if (bgColor >= "#84cc16" && bgColor <= "#ecfccb") {
+      setBgColor(getRandomColor());
+    }
   };
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
-    setBgColor(getRandomColor());
+    if (bgColor >= "#84cc16" && bgColor <= "#ecfccb") {
+      setBgColor(getRandomColor());
+    }
   };
 
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
-    setBgColor(getRandomColor());
-  };
-  
-    return (
-      <form style={{backgroundColor: bgColor}}>
-        <label>Name:</label>
-        <input type="text" value={name} onChange={handleNameChange} />
-        <label>Email:</label>
-        <input type="email" value={email} onChange={handleEmailChange} />
-        <label>Message:</label>
-        <textarea value={message} onChange={handleMessageChange} />
-      </form>
-    );
+    if (bgColor >= "#84cc16" && bgColor <= "#ecfccb") {
+      setBgColor(getRandomColor());
+    }
   };
 
+  return (
+    <form className="bg-{bgColor}" style={{ backgroundColor: bgColor }}>
+      <label className="block p-4 text-sm">Name:</label>
+      <input
+        className="block w-1/2 p-4"
+        type="text"
+        value={name}
+        onChange={handleNameChange}
+      />
+      <label className="block p-4 text-sm">Email:</label>
+      <input
+        className="block w-1/2 p-4"
+        type="email"
+        value={email}
+        onChange={handleEmailChange}
+      />
+      <label className="block p-4 text-sm">Message:</label>
+      <textarea
+        className="block w-1/2 p-4"
+        value={message}
+        onChange={handleMessageChange}
+      />
+    </form>
+  );
+}
