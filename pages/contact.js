@@ -1,6 +1,7 @@
 import { motion as m } from "framer-motion"
 import { useEffect, useState } from "react";
 import Form from "../components/Form";
+import SocialLinks from "../components/SocialLinks"
 
 function contact() {
 
@@ -54,6 +55,7 @@ function contact() {
               <h1>let's talk</h1>
 
               <Form getRandomColor={getRandomColor} setBgColor={setBgColor} />
+              
 
           </div>
         

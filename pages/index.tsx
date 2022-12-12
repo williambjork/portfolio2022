@@ -5,6 +5,7 @@ import { motion as m } from "framer-motion"
 import ParticlesBackground from "../components/ParticlesBackground"
 import particlesConfig from "../components/config/indexParticles.config.js"
 import { useEffect, useState } from 'react'
+import SocialLinks from '../components/SocialLinks'
 
 
 const Home: NextPage = () => {
@@ -58,6 +59,9 @@ const Home: NextPage = () => {
          
         </div>
         
+        <div className="absolute bottom-6 right-6">
+                <SocialLinks />
+        </div>
           
       </main>
 

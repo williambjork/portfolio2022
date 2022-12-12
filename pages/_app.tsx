@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import  Nav  from "../components/Nav"
 import {AnimatePresence} from "framer-motion"
+import SocialLinks from "../components/SocialLinks"
 
 function MyApp({ Component, pageProps, router }: AppProps) {
 
@@ -10,9 +11,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
    
     <div className='py-24 px-12 lg:px-48'>
      <Nav />
+     
      <AnimatePresence>
       <Component key={router.pathname} {...pageProps} />
      </AnimatePresence>
+     
     </div>
   
   )
