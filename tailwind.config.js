@@ -11,7 +11,8 @@ module.exports = {
         "bungee-shade": ["BungeeShade"],
         "dmsans": ["DMSans"],
         "sansita": ["Sansita"],
-        "gravitas-one": ["GravitasOne"]
+        "gravitas-one": ["GravitasOne"],
+        "yeseva-one": ["YesevaOne"]
        
 
       },

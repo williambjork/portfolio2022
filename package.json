@@ -13,6 +13,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-tsparticles": "^2.5.3",
+    "strapi": "^3.6.11",
     "tsparticles-engine": "^2.5.2"
   },
   "devDependencies": {

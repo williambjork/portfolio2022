@@ -17,6 +17,14 @@ html, body, #__next {
 }
 
 @font-face {
+    font-family: "Yeseva";
+    src: url("../public/fonts/YesevaOne-Regular.ttf");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+} 
+
+@font-face {
     font-family: "DMSans";
     src: url("../public/fonts/DMSans-Bold.ttf");
     font-weight: 500;
@@ -39,3 +47,4 @@ html, body, #__next {
     font-display: swap;
     font-style: normal;
 } 
+

@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
       <main>
         <div className='mt-72 p-1'>
-          <h1 className='font-bungee-shade flex text-6xl text-center lg:text-right '>
+          <h1 className='font-yeseva-one flex text-6xl text-center lg:text-right '>
             William Björk
           </h1>
           <h3 className='pl-2 font-sansita pt-3 text-2xl'>React & NextJS Developer</h3>
